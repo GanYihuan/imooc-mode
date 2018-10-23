@@ -41,7 +41,7 @@ npm install webpack webpack-cli webpack-dev-server html-webpack-plugin -D
 11. 策略模式
 12. 模板方法模式
 13. 观察者模式: 发布 & 订阅， 一对多, 一对一
-14. 迭代器模式
+14. 迭代器模式: 顺序访问集合，无需知道集合内部结构
 15. 责任连模式
 16. 命令模式
 17. 备忘录模式

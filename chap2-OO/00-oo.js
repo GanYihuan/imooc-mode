@@ -1,36 +1,34 @@
-﻿/* father */
-class People {
-	constructor(name, age) {
+﻿class House {
+	constructor(city) {
+		this.city = city
+	}
+	showCity() {}
+}
+
+/* father */
+class People extends House {
+	constructor(name, house) {
 		this.name = name
-		this.age = age
-	}
-	eat() {
-		alert(`${this.name} eat something`)
-	}
-	speak() {
-		alert(`My name is ${this.name}, age ${this.age}`)
+		this.house = house
 	}
 	saySomething() {}
 }
 
 /* child */
-class Student extends People {
-	constructor(name, age, number) {
+class A extends People {
+	constructor(name, house, number) {
 		/* super(): invoked father constructor */
-		super(name, age)
+		super(name, house)
 		this.number = number
-	}
-	study() {
-		alert(`${this.name} study`)
 	}
 	saySomething() {
 		alert('I am Student')
 	}
 }
 
-class Teacher extends People {
-	constructor(name) {
-		super(name)
+class B extends People {
+	constructor(name, house) {
+		super(name, house)
 	}
 	saySomething() {
 		alert('I am Teacher')
@@ -38,16 +36,13 @@ class Teacher extends People {
 }
 
 /* OO */
-let zhang = new People('zhang', 20)
-zhang.eat()
-zhang.speak()
+let aHouse = new House('beijing')
+let a = new A('aHouse', aHouse, 10)
+/* polymorphic */
+a.saySomething()
 
 /* extend */
-let xiaohong = new Student('xiaohong', 11, 'A2')
-xiaohong.study()
-
+let bHouse = new House('guangzhou')
+let b = new B('bHouse', bHouse, 'A2')
 /* polymorphic */
-let a = new A('a')
-a.saySomething()
-let b = new B('b')
 b.saySomething()

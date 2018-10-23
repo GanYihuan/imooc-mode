@@ -45,7 +45,7 @@ npm install webpack webpack-cli webpack-dev-server html-webpack-plugin -D
 15. 责任连模式
 16. 命令模式
 17. 备忘录模式
-18. 状态模式
+18. 状态模式: 一个对象有状态变化, 每次变化会触发一个逻辑
 19. 访问者模式
 20. 中介模式
 21. 解释器模式
@@ -61,4 +61,10 @@ npm i core-decorators -S
 ```js
 import { deprecate } from "core-decorators"
 import { readonly } from "core-decorators"
+```
+
+## chap12
+
+```console
+npm i javascript-state-machine -S
 ```

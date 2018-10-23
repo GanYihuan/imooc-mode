@@ -1,4 +1,4 @@
-﻿/* adapter pattern */
+﻿/* adapter pattern: Provide different interface */
 class Adaptee {
 	plug() {
 		return 'japan plug'

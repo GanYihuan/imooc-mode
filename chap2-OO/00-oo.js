@@ -22,7 +22,7 @@ class A extends People {
 		this.number = number
 	}
 	saySomething() {
-		alert('I am Student')
+		alert('I am A')
 	}
 }
 
@@ -31,7 +31,7 @@ class B extends People {
 		super(name, house)
 	}
 	saySomething() {
-		alert('I am Teacher')
+		alert('I am B')
 	}
 }
 
@@ -39,10 +39,10 @@ class B extends People {
 let aHouse = new House('beijing')
 let a = new A('aHouse', aHouse, 10)
 /* polymorphic */
-a.saySomething()
+a.saySomething() // I am A
 
 /* extend */
 let bHouse = new House('guangzhou')
 let b = new B('bHouse', bHouse, 'A2')
 /* polymorphic */
-b.saySomething()
+b.saySomething() // I am B

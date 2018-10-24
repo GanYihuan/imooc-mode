@@ -29,8 +29,8 @@ npm install webpack webpack-cli webpack-dev-server html-webpack-plugin -D
 > 23 种模式
 
 1. 工厂模式 (工厂方法模式, 抽象工厂模式, 建造者模式)
-2. 单例模式
-3. 原型模式
+2. 单例模式: 系统中被唯一使用, 一个类只有一个实例, 登录框, 购物车, 单例模式要 java 特性 (private), js 中 typescript 才有 (private)
+3. 原型模式:
 4. 适配器模式: 返回不一样接口
 5. 装饰器模式: 扩展功能, 原有功能不变且可使用
 6. 代理模式: 显示加上限制的原有功能, 返回一样接口
@@ -62,6 +62,14 @@ npm i core-decorators -S
 import { deprecate } from "core-decorators"
 import { readonly } from "core-decorators"
 ```
+
+## chap11
+
+- **11-3.js**
+
+> 有序集合的数据, 里面都有 [Symbol.iterator]  属性, 属性值是函数, 执行函数返回一个迭代器, 此迭代器有 next() 可顺序迭代子元素
+
+- Array Map Set String TypedArray arguments NodeList (object 不是有序集合)
 
 ## chap12
 

@@ -17,6 +17,7 @@
 // 	}
 // }
 
+/* for of: 简写上面 */
 let arr = [1, 2, 3, 4]
 let nodeList = document.getElementsByTagName('p')
 let m = new Map()

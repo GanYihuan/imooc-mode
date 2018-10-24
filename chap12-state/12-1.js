@@ -1,4 +1,5 @@
-﻿class State {
+﻿/* state pattern */
+class State {
 	constructor(color) {
 		this.color = color
 	}
@@ -11,7 +12,7 @@
 class Context {
 	constructor() {
 		this.state = null
-	} 
+	}
 	setState(state) {
 		this.state = state
 	}

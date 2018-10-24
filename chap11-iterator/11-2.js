@@ -1,4 +1,5 @@
-﻿class Iterator {
+﻿/* iterator pattern */
+class Iterator {
 	constructor(conatiner) {
 		this.list = conatiner.list
 		this.index = 0

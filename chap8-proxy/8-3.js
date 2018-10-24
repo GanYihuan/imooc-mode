@@ -1,5 +1,4 @@
-﻿/* proxy pattern: Provide the same interface */
-// 明星
+﻿// 明星
 let star = {
 	name: '范冰冰',
 	age: 30,

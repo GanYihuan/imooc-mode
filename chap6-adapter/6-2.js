@@ -1,20 +1,20 @@
-﻿/* adapter pattern: Provide different interface */
-class Adaptee {
+﻿/* adapter pattern */
+class Jadapter {
 	plug() {
-		return 'japan plug'
+		return '日本插头'
 	}
 }
 
-class Target {
+class Cadapter {
 	constructor() {
-		this.adaptee = new Adaptee()
+		this.jadapter = new Jadapter()
 	}
 	request() {
-		let info = this.adaptee.plug()
-		return `${info} - china plug`
+		let info = this.jadapter.plug()
+		return `${info} - 中国插头`
 	}
 }
 
-let target = new Target()
-let res = target.request()
-console.log(res)
+let cadapter = new Cadapter()
+let res = cadapter.request()
+console.log(res) // 日本插头 - 中国插头

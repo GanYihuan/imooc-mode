@@ -1,4 +1,4 @@
-﻿/* Decorator pattern: extensions */
+﻿/* decorator pattern */
 class Circle {
 	draw() {
 		console.log('draw circle')
@@ -19,10 +19,7 @@ class Decorator {
 }
 
 let circle = new Circle()
-// draw circle
-circle.draw()
+circle.draw() // draw circle
 
 let dec = new Decorator()
-// draw circle
-// draw red
-dec.draw()
+dec.draw() // draw circle, draw red

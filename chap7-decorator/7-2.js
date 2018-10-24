@@ -1,5 +1,4 @@
-﻿/* dacorator pattern */
-function testDec(target) {
+﻿function testDec(target) {
 	target.isDec = isDec
 }
 

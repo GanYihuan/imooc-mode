@@ -4,6 +4,7 @@
 class ReadImg {
   constructor(fileName) {
     this.fileName = fileName
+    this.loadFromDisk()
   }
   display() {
     console.log('display...' + this.fileName)

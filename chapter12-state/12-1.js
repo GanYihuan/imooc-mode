@@ -28,12 +28,9 @@ let greed = new State('greed')
 let yellow = new State('yellow')
 let red = new State('red')
 
-// 绿灯亮了
 greed.handle(context)
-console.log(context.getState())
-// 黄灯亮了
+console.log(context.getState()) // 绿灯亮了
 yellow.handle(context)
-console.log(context.getState())
-// 红灯亮了
+console.log(context.getState()) // 黄灯亮了
 red.handle(context)
-console.log(context.getState())
+console.log(context.getState()) // 红灯亮了

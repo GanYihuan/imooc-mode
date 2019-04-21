@@ -8,6 +8,7 @@
 /* father */
 class People extends House {
 	constructor(name, house) {
+    /* super(): invoked father constructor */
     super(house)
 		this.name = name
 	}
@@ -34,7 +35,7 @@ class B extends People {
 		alert('I am B')
 	}
 }
- 
+
 /* OO */
 let aHouse = new House('beijing')
 let a = new A('aHouse', aHouse, 10)

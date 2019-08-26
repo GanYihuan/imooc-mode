@@ -14,12 +14,6 @@ class Product {
   init() {
     alert('init')
   }
-  fun1() {
-    alert('fun1')
-  }
-  fun2() {
-    alert('fun2')
-  }
 }
 
 class Creator {
@@ -31,5 +25,3 @@ class Creator {
 let creator = new Creator()
 let p = creator.create('p1')
 p.init()
-p.fun1()
-p.fun2()
